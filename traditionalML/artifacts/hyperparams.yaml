@@ -1,0 +1,1226 @@
+hyperparameter_space:
+  colsample_bytree:
+    high: 1.0
+    log: false
+    low: 0.5
+    type: float
+  learning_rate:
+    high: 0.3
+    log: true
+    low: 0.005
+    type: float
+  max_bin:
+    high: 511
+    log: true
+    low: 63
+    type: int
+  max_depth:
+    high: 12
+    log: false
+    low: 3
+    type: int
+  min_child_samples:
+    high: 200
+    log: true
+    low: 10
+    type: int
+  min_split_gain:
+    high: 1.0
+    log: false
+    low: 0.0
+    type: float
+  n_estimators:
+    high: 2000
+    log: true
+    low: 200
+    type: int
+  num_leaves:
+    high: 255
+    log: true
+    low: 15
+    type: int
+  reg_alpha:
+    high: 10.0
+    log: true
+    low: 1.0e-09
+    type: float
+  reg_lambda:
+    high: 10.0
+    log: true
+    low: 1.0e-09
+    type: float
+  subsample:
+    high: 1.0
+    log: false
+    low: 0.6
+    type: float
+  subsample_freq:
+    high: 7
+    log: false
+    low: 1
+    type: int
+model_v1:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 214.43478260869566
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 3e6b3545e2344b519bb0caa1eea203b2
+    roc_auc_fulltrain: 1.0
+    timestamp: 2026-03-31_11-20
+    train_run_id: 783aa33876f14dc0a65d0af23055ee73
+  hpt:
+    best_params:
+      colsample_bytree: 0.6662387805333518
+      learning_rate: 0.043011665651650606
+      max_bin: 389
+      max_depth: 10
+      min_child_samples: 25
+      min_split_gain: 0.8331110603669263
+      n_estimators: 641
+      num_leaves: 136
+      reg_alpha: 0.0020582129087456753
+      reg_lambda: 6.573866513612414e-09
+      subsample: 0.8073363809112292
+      subsample_freq: 7
+    best_valid_roc_auc: 0.9803998314182667
+    n_trials: 5
+    parent_run_id: d6ef57c491e54aa585633628213e698b
+    roc_auc_fulltrain: 0.9999999897349391
+    timestamp: 2025-09-26_08-38
+    train_run_id: 633b3ef411cd4f6eb960dd42507cfbe9
+model_v10:
+  baseline:
+    params:
+      boosting_type: gbdt
+      class_weight: null
+      colsample_bytree: 1.0
+      importance_type: split
+      learning_rate: 0.05
+      max_depth: 5
+      min_child_samples: 20
+      min_child_weight: 0.001
+      min_split_gain: 0.0
+      n_estimators: 500
+      n_jobs: null
+      num_leaves: 31
+      objective: null
+      random_state: 42
+      reg_alpha: 0.0
+      reg_lambda: 0.0
+      scale_pos_weight: 17.39075546871422
+      subsample: 1.0
+      subsample_for_bin: 200000
+      subsample_freq: 0
+    parent_run_id: 83cb94c3325e46e6ab0ce24b42942174
+    roc_auc_fulltrain: 0.98125
+    timestamp: 2025-12-02_10-09
+    train_run_id: 4e898e0461604c70813301b2d8808faf
+model_v1000:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 214.43478260869566
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 18fd07a69467472e9cc81298329cd234
+    roc_auc_fulltrain: 1.0
+    timestamp: 2026-03-31_13-41
+    train_run_id: 96939eecfd6a477eab687e6b16adda20
+model_v11:
+  baseline:
+    params:
+      boosting_type: gbdt
+      class_weight: null
+      colsample_bytree: 1.0
+      importance_type: split
+      learning_rate: 0.05
+      max_depth: 5
+      min_child_samples: 20
+      min_child_weight: 0.001
+      min_split_gain: 0.0
+      n_estimators: 600
+      n_jobs: null
+      num_leaves: 31
+      objective: null
+      random_state: 42
+      reg_alpha: 0.0
+      reg_lambda: 0.0
+      scale_pos_weight: 17.39075546871422
+      subsample: 1.0
+      subsample_for_bin: 200000
+      subsample_freq: 0
+    parent_run_id: 52c86fc47dc34d41ae5d8cbabe1ac267
+    roc_auc_fulltrain: 0.9596222486615111
+    timestamp: 2025-12-04_13-58
+    train_run_id: cfd2d62cdf2e403aa99aca00a1b1ed4a
+model_v2:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: 5
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 200
+      clf__n_jobs: null
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 4.493305812785898
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: 4cf53278365843eda9ae852561ebd4a1
+    roc_auc_fulltrain: 0.9999848312458912
+    timestamp: 2025-09-29_10-15
+    train_run_id: 2eee110e8042453d9a881679d2174df8
+model_v20:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: 5
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 200
+      clf__n_jobs: null
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 42.5152621437988
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: 62d0000e22024c5481ff30413c7b6f8b
+    roc_auc_fulltrain: 0.9999767251119491
+    timestamp: 2025-12-03_17-51
+    train_run_id: 523e95a64a7c4caabf5695d7e477ce60
+model_v21:
+  baseline:
+    params:
+      boosting_type: gbdt
+      class_weight: null
+      colsample_bytree: 1.0
+      importance_type: split
+      learning_rate: 0.05
+      max_depth: 5
+      min_child_samples: 20
+      min_child_weight: 0.001
+      min_split_gain: 0.0
+      n_estimators: 300
+      n_jobs: null
+      num_leaves: 31
+      objective: null
+      random_state: 42
+      reg_alpha: 0.0
+      reg_lambda: 0.0
+      scale_pos_weight: 42.5152621437988
+      subsample: 1.0
+      subsample_for_bin: 200000
+      subsample_freq: 0
+    parent_run_id: ba761fc03ebd4c0586ed909e58256999
+    roc_auc_fulltrain: 0.9993914506628064
+    timestamp: 2025-12-04_10-01
+    train_run_id: 2201b7c76e8540b1872cf6a96cf14af9
+model_v22:
+  baseline:
+    params:
+      boosting_type: gbdt
+      class_weight: null
+      colsample_bytree: 1.0
+      importance_type: split
+      learning_rate: 0.05
+      max_depth: 5
+      min_child_samples: 20
+      min_child_weight: 0.001
+      min_split_gain: 0.0
+      n_estimators: 400
+      n_jobs: null
+      num_leaves: 31
+      objective: null
+      random_state: 42
+      reg_alpha: 0.0
+      reg_lambda: 0.0
+      scale_pos_weight: 42.5152621437988
+      subsample: 1.0
+      subsample_for_bin: 200000
+      subsample_freq: 0
+    parent_run_id: 04b0b13ea9404f9381ad3ce62c9876c8
+    roc_auc_fulltrain: 0.9887581630378116
+    timestamp: 2025-12-04_10-20
+    train_run_id: f53648534a904b76a09182299a7b7bde
+model_v23:
+  baseline:
+    params:
+      boosting_type: gbdt
+      class_weight: null
+      colsample_bytree: 1.0
+      importance_type: split
+      learning_rate: 0.05
+      max_depth: 5
+      min_child_samples: 20
+      min_child_weight: 0.001
+      min_split_gain: 0.0
+      n_estimators: 500
+      n_jobs: null
+      num_leaves: 31
+      objective: null
+      random_state: 42
+      reg_alpha: 0.0
+      reg_lambda: 0.0
+      scale_pos_weight: 42.5152621437988
+      subsample: 1.0
+      subsample_for_bin: 200000
+      subsample_freq: 0
+    parent_run_id: 960c203bcca14af992a2d421e4198941
+    roc_auc_fulltrain: 0.9974010687438424
+    timestamp: 2025-12-04_16-14
+    train_run_id: 71c4a292e05d4b6aad10959103768546
+model_v24:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 24.44900131580893
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: a118fb9f5ace49af9e03686407e10e5a
+    roc_auc_fulltrain: 0.998765828692046
+    timestamp: 2025-12-15_14-45
+    train_run_id: 5a739fce6edd4de49d928193dd61addb
+model_v26:
+  baseline:
+    params:
+      boosting_type: gbdt
+      class_weight: null
+      colsample_bytree: 0.7
+      importance_type: split
+      learning_rate: 0.05
+      max_depth: -1
+      min_child_samples: 100
+      min_child_weight: 0.001
+      min_split_gain: 0.0
+      n_estimators: 600
+      n_jobs: -1
+      num_leaves: 31
+      objective: null
+      random_state: 42
+      reg_alpha: 0.0
+      reg_lambda: 0.0
+      scale_pos_weight: 24.44900131580893
+      subsample: 0.8
+      subsample_for_bin: 200000
+      subsample_freq: 1
+    parent_run_id: ff13958adfd145a18d559ebfc8874a2b
+    roc_auc_fulltrain: null
+    timestamp: 2025-12-19_14-56
+    train_run_id: 7265ccb01eba48f8907378b8289fff8f
+model_v27:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 10.364412932603104
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 502b55dd59904c13b01706a14c954caa
+    roc_auc_fulltrain: 1.0
+    timestamp: 2025-12-23_23-49
+    train_run_id: 6576bd8b4e614b78a30f10785f24c33e
+model_v28:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 29.241945273380203
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 7bc3e0b483784a2abc9165b891ac849d
+    roc_auc_fulltrain: 0.9993789312611127
+    timestamp: 2025-12-25_14-36
+    train_run_id: b0f271a7c3904d408102f6e46c83cecd
+model_v29:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 13.77242355605889
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 5a4a4d5d98aa4a06891900a2c2b5f154
+    roc_auc_fulltrain: 0.998808448700163
+    timestamp: 2025-12-30_14-09
+    train_run_id: 6eb3e8b79fa24b96a4ab0adaedadf30e
+model_v3:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: 5
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 200
+      clf__n_jobs: null
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 21.402469411283423
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: d5101299a1d14971bccbc04f81d46b63
+    roc_auc_fulltrain: 0.9999932402127318
+    timestamp: 2025-10-18_18-12
+    train_run_id: c55d9675764f4a3da9cc3ed64b7b3002
+model_v30:
+  baseline:
+    params:
+      boosting_type: gbdt
+      class_weight: null
+      colsample_bytree: 0.7
+      importance_type: split
+      learning_rate: 0.05
+      max_depth: -1
+      min_child_samples: 100
+      min_child_weight: 0.001
+      min_split_gain: 0.0
+      n_estimators: 500
+      n_jobs: -1
+      num_leaves: 31
+      objective: null
+      random_state: 42
+      reg_alpha: 0.0
+      reg_lambda: 0.0
+      scale_pos_weight: 13.77242355605889
+      subsample: 0.8
+      subsample_for_bin: 200000
+      subsample_freq: 1
+    parent_run_id: d342075884a14eaf933456e37b8b2d29
+    roc_auc_fulltrain: null
+    timestamp: 2026-03-16_13-37
+    train_run_id: 8ad54d2a38334e86b5a6a868ef28ef35
+model_v31:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 1914.8225806451612
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 656ff27487a040ab9cb716f46756c96a
+    roc_auc_fulltrain: 0.7626138022041203
+    timestamp: 2026-02-10_08-50
+    train_run_id: d4a3f81b90eb424ea98aba3a2f5385b4
+model_v32:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 2681.896551724138
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 2c1b3c8b6ec64fcc8bbf3ab887d0657c
+    roc_auc_fulltrain: 0.5345605870160387
+    timestamp: 2026-02-11_17-13
+    train_run_id: 5999e7474aa4488f8f421b5f49610c25
+model_v4:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: 5
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 300
+      clf__n_jobs: null
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 21.402469411283423
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: ce8f4489c2f947eda703ac6c7be36269
+    roc_auc_fulltrain: null
+    timestamp: 2025-10-20_17-03
+    train_run_id: a640b39c0eef48a6aae9393f0546820c
+model_v40:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 1313.4893617021276
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 6904d6b0d0fb4b62baf9df5c6d3a8bba
+    roc_auc_fulltrain: 0.7619119503098057
+    timestamp: 2026-03-30_16-15
+    train_run_id: 8d07f3a6a646469db2e5540f32a5b973
+model_v41:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 243.4468085106383
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 796c4c114ffa489aa0c429ccd7e09148
+    roc_auc_fulltrain: 1.0
+    timestamp: 2026-03-30_15-24
+    train_run_id: 1eb79159ac8b467183553c5e1dbe4810
+model_v42:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 1028.391304347826
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 50eab625a14946c3a5605fe906ff0838
+    roc_auc_fulltrain: 0.8332464286888673
+    timestamp: 2026-03-30_16-54
+    train_run_id: 862f17b998974f249bebc4f7409473e0
+model_v43:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 804.2282608695652
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 319166d1d2c74a63bfabcd08ab4e9207
+    roc_auc_fulltrain: 0.7264849005169393
+    timestamp: 2026-03-30_17-01
+    train_run_id: d1764dd9ecb242eca44fd2814839d543
+model_v44:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 1.0
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 5b8fd35ddd9546898bdbe9a54465dec5
+    roc_auc_fulltrain: 1.0
+    timestamp: 2026-03-30_17-15
+    train_run_id: 967115e119094ef58781817ca55dccb2
+model_v45:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 1.0
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 3f04d47b12244de4ba9f7c93c9e84baa
+    roc_auc_fulltrain: 1.0
+    timestamp: 2026-03-31_14-22
+    train_run_id: 1a4b73aecd47483c85d2418a543e44e3
+model_v46:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 1.0
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 292d3d7a4aaf4a1ea81527f13a71bb0b
+    roc_auc_fulltrain: 1.0
+    timestamp: 2026-03-31_16-44
+    train_run_id: 5cafdb0f118a40bfb79eb98d75de8d55
+model_v47:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 1.0
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: c11d92f9fbe74bb1ae728cd229630125
+    roc_auc_fulltrain: 0.9999220487594258
+    timestamp: 2026-03-31_17-30
+    train_run_id: 1a05a4858a644168b46ac2ff9c32f236
+model_v48:
+  hpt:
+    best_params:
+      colsample_bytree: 0.7564547998469522
+      learning_rate: 0.015255795477820322
+      max_bin: 154
+      max_depth: 4
+      min_child_samples: 142
+      min_split_gain: 0.8852301950444537
+      n_estimators: 348
+      num_leaves: 35
+      reg_alpha: 2.895527570996369e-07
+      reg_lambda: 1.5629125507244896
+      subsample: 0.7721815384943738
+      subsample_freq: 6
+    best_valid_roc_auc: 0.9592646757905127
+    n_trials: 10
+    parent_run_id: cd70787f52d84d57abd5bbbb2dbec608
+    roc_auc_fulltrain: 0.994657866320437
+    timestamp: 2026-04-01_10-18
+    train_run_id: 7de1066151d84d7c84bcd8ededa005c4
+model_v49:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 1.0
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: eeac0665523a4555801b5d720869f9cc
+    roc_auc_fulltrain: 1.0
+    timestamp: 2026-04-06_15-42
+    train_run_id: 110a8befd0644f41acf2f1f8aafe4495
+model_v5:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: 5
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 300
+      clf__n_jobs: null
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 21.402469411283423
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: 46a0b957e4014682b3b0e403c4005fa1
+    roc_auc_fulltrain: null
+    timestamp: 2025-10-22_11-26
+    train_run_id: efc1a86fa7fd408e8163164b77f59a8b
+model_v50:
+  hpt:
+    best_params:
+      colsample_bytree: 0.5051880545689263
+      learning_rate: 0.08126955488291339
+      max_bin: 82
+      max_depth: 4
+      min_child_samples: 14
+      min_split_gain: 0.9059574671320707
+      n_estimators: 1588
+      num_leaves: 103
+      reg_alpha: 0.0009390108581437672
+      reg_lambda: 3.1359527884303824
+      subsample: 0.6828403517017883
+      subsample_freq: 6
+    best_valid_roc_auc: 0.7345834138797602
+    n_trials: 10
+    parent_run_id: 65c94f02f55c4250a1e3ba6ffa0fd7b5
+    roc_auc_fulltrain: 0.9998063228231543
+    timestamp: 2026-04-06_16-22
+    train_run_id: be53ce37af6c417cb5f385a70cd8aa49
+model_v6:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: 5
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 200
+      clf__n_jobs: null
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 17.39075546871422
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: 196324b3813d4da5a88551f8d2d683d5
+    roc_auc_fulltrain: 0.9970913162236023
+    timestamp: 2025-11-03_14-59
+    train_run_id: b6b543ef83c74e87afb8338422b06211
+model_v68:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 7.197181850407657
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 2c77d301d33c4836b4d2c5ba7004b3d4
+    roc_auc_fulltrain: 0.9833310550891917
+    timestamp: 2026-02-27_18-44
+    train_run_id: 98ee164968cb4c95b10d6e1cf88cd7d9
+model_v69:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 0.7
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 100
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 400
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 8.968487319812569
+      clf__subsample: 0.8
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 1
+    parent_run_id: 6447b0c949b949d4954068255c27c1be
+    roc_auc_fulltrain: 0.9913022564911518
+    timestamp: 2026-03-02_09-58
+    train_run_id: 7662259a654740aa9612d6d0511ea18d
+model_v7:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: 5
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 211
+      clf__n_jobs: null
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 17.39075546871422
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: 8d4c7e8b33fa4047889768c8e5c4944b
+    roc_auc_fulltrain: 1.0
+    timestamp: 2025-11-04_10-07
+    train_run_id: 48cbee21ed5144d48652c38326ec58d4
+model_v8:
+  baseline:
+    params:
+      boosting_type: gbdt
+      class_weight: null
+      colsample_bytree: 1.0
+      importance_type: split
+      learning_rate: 0.05
+      max_depth: 5
+      min_child_samples: 20
+      min_child_weight: 0.001
+      min_split_gain: 0.0
+      n_estimators: 400
+      n_jobs: null
+      num_leaves: 31
+      objective: null
+      random_state: 42
+      reg_alpha: 0.0
+      reg_lambda: 0.0
+      scale_pos_weight: 21.402469411283423
+      subsample: 1.0
+      subsample_for_bin: 200000
+      subsample_freq: 0
+    parent_run_id: 14a5c8f22d754a13b8cecf3ce74daa7a
+    roc_auc_fulltrain: 0.9933908387864365
+    timestamp: 2025-11-17_09-01
+    train_run_id: 0f6a7fbfb48c474a9371535ae16b3493
+model_v86:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.1
+      clf__max_depth: -1
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 50
+      clf__n_jobs: -1
+      clf__num_leaves: 20
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: c2b054a8c8ba4ed7b797444e7a44bb85
+    roc_auc_fulltrain: 0.9786304726123822
+    timestamp: 2026-03-02_12-07
+    train_run_id: 9f4ac0fdfd764ec387667143c66de00f
+model_v87:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 100
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 8.968487319812569
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: b4a7c5c78f1d4d7da213e1cb6298abba
+    roc_auc_fulltrain: 0.9880222092907588
+    timestamp: 2026-03-04_09-20
+    train_run_id: 86c9981baafc43aca9c28342043c04b2
+model_v88:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.05
+      clf__max_depth: -1
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 100
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: 42
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__scale_pos_weight: 10.441539178709158
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: 6f6ce50826284c74a78f44a1c9b4bf00
+    roc_auc_fulltrain: 0.9912355238021409
+    timestamp: 2026-03-18_11-19
+    train_run_id: 2c9e4c72ff9349028f15f673f2fe1317
+model_v89:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.1
+      clf__max_depth: -1
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 100
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: null
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: cce7903bfd0a4303ae429ae8d36ac469
+    roc_auc_fulltrain: 0.9986458385054227
+    timestamp: 2026-03-19_10-10
+    train_run_id: 91324569a5ea464bb3297d39db852f96
+model_v9:
+  baseline:
+    params:
+      boosting_type: gbdt
+      class_weight: null
+      colsample_bytree: 1.0
+      importance_type: split
+      learning_rate: 0.05
+      max_depth: 5
+      min_child_samples: 20
+      min_child_weight: 0.001
+      min_split_gain: 0.0
+      n_estimators: 400
+      n_jobs: null
+      num_leaves: 31
+      objective: null
+      random_state: 42
+      reg_alpha: 0.0
+      reg_lambda: 0.0
+      scale_pos_weight: 17.39075546871422
+      subsample: 1.0
+      subsample_for_bin: 200000
+      subsample_freq: 0
+    parent_run_id: 67cde12963744956adf936e231eced63
+    roc_auc_fulltrain: 1.0
+    timestamp: 2025-11-17_11-37
+    train_run_id: 51a022345c504f888b8c13e637152bec
+model_v90:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.1
+      clf__max_depth: -1
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 100
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: null
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: 58cd11a3609a4b4999f4b378fa2f8e81
+    roc_auc_fulltrain: 0.9986188951408124
+    timestamp: 2026-03-24_09-53
+    train_run_id: d005fca908a94e998a9e29f6cb9aff06
+model_v91:
+  baseline:
+    params:
+      clf__boosting_type: gbdt
+      clf__class_weight: null
+      clf__colsample_bytree: 1.0
+      clf__importance_type: split
+      clf__learning_rate: 0.1
+      clf__max_depth: -1
+      clf__min_child_samples: 20
+      clf__min_child_weight: 0.001
+      clf__min_split_gain: 0.0
+      clf__n_estimators: 100
+      clf__n_jobs: -1
+      clf__num_leaves: 31
+      clf__objective: null
+      clf__random_state: null
+      clf__reg_alpha: 0.0
+      clf__reg_lambda: 0.0
+      clf__subsample: 1.0
+      clf__subsample_for_bin: 200000
+      clf__subsample_freq: 0
+    parent_run_id: e08b7858e9c9475cb28ea15f6108e1a6
+    roc_auc_fulltrain: 0.994136722009037
+    timestamp: 2026-04-02_16-06
+    train_run_id: dcfc9f3e971e473eb7a1d2b34ef0e00b

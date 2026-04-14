@@ -1,0 +1,30 @@
+# visualization
+matplotlib
+plotly
+seaborn
+scikit-learn
+
+# essentials
+pandas==2.2.2
+numpy
+tqdm
+pyarrow==15.0.2
+fastparquet
+tabulate
+pyyaml
+
+# model construction
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch
+
+tensorboard
+pytz
+# drain3
+pyspark
+transformers
+transformers[torch]
+
+fastapi
+uvicorn[standard]
+
+py7zr
