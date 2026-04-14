@@ -34,7 +34,6 @@ IncidentPrediction/
 ├── ART/                       # Proposed ART model and evaluation pipeline
 ├── traditionalML/             # LightGBM feature-engineered approach
 ├── drain3_multiprocess/       # Multiprocess Drain3 template mining
-├── _LNCS__ART4DeviceIncident.pdf
 └── README.md
 ```
 
