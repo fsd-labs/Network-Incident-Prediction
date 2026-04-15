@@ -6,7 +6,7 @@ This repository contains the source code accompanying the paper:
 
 Paper link: [Abstract Reasoning-Driven Prediction and Root Cause Identification of Device Incidents in Core Internet Infrastructure](<PAPER_LINK_PLACEHOLDER>)
 
-Data source: [Experiment dataset](<DATA_SOURCE_PLACEHOLDER>)
+**Data source:** [ML (LGBM) dataset](https://huggingface.co/datasets/FSD-LAB/noc-incident-dataset-for-ml) & [ART dataset](https://huggingface.co/datasets/FSD-LAB/noc-incident-dataset-for-dl)
 
 ## Overview
 
