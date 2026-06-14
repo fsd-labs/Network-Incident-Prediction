@@ -78,6 +78,61 @@ miner.save_state("manual checkpoint")
 miner.close()
 ```
 
+## Quick Cluster Exploration
+
+Use this as the sharded-snapshot equivalent of
+`ART/drain3/explore_cluster_id.py`. Multiprocess snapshots must be loaded with
+`LengthShardedTemplateMiner`, not the standard `TemplateMiner`, because clusters
+are stored under token-count shards instead of `template_miner.drain.clusters`.
+For read-only exploration, set `drain_shard_workers = 1` so the saved sharded
+snapshot is loaded in-process and can be traversed without worker output.
+
+```python
+from drain3 import LengthShardedTemplateMiner
+from drain3.file_persistence import FilePersistence
+from drain3.template_miner_config import TemplateMinerConfig
+
+config = TemplateMinerConfig()
+config.load("drain3.ini")
+config.drain_shard_workers = 1
+
+miner = LengthShardedTemplateMiner(
+    config=config,
+    persistence_handler=FilePersistence("drain3_state.bin"),
+)
+
+clusters = []
+templates = []
+for token_count, drain in miner._drains_by_token_count.items():
+    for cluster in drain.clusters:
+        template = cluster.get_template()
+        clusters.append({
+            "cluster_id": cluster.cluster_id,
+            "size": cluster.size,
+            "token_count": token_count,
+            "latest_ts": miner.get_cluster_latest_ts(cluster.cluster_id),
+            "template": template,
+        })
+        templates.append(template)
+
+for row in sorted(clusters, key=lambda r: r["size"], reverse=True)[:20]:
+    print(
+        f'Cluster {row["cluster_id"]} '
+        f'with size {row["size"]} '
+        f'tokens={row["token_count"]} '
+        f'latest_ts={row["latest_ts"]}:'
+    )
+    print(f'Template: {row["template"]}')
+
+print(f"TOTAL CLUSTER/TEMP: {len(clusters)}")
+print(f"Total unique template: {len(set(templates))}")
+```
+
+If the miner is still running with `shard_workers > 1`, call
+`miner._collect_snapshot_data()` first and deserialize each returned Drain
+state with `jsonpickle.loads(...)`; in multiprocessing mode the parent process
+does not own the live Drain shards directly.
+
 ## Snapshot Format
 
 The sharded miner persists a single snapshot containing all Drain shards:
@@ -90,7 +145,10 @@ The sharded miner persists a single snapshot containing all Drain shards:
     "19": "<jsonpickle Drain object>"
   },
   "total_cluster_count": 12345,
-  "cluster_id_counter": 34567
+  "cluster_id_counter": 34567,
+  "cluster_latest_ts": {
+    "101": 1735689600
+  }
 }
 ```
 
