@@ -1,7 +1,7 @@
 # IncidentPrediction
 
 > **Accepted Paper | [IUKM 2026](https://www.jaist.ac.jp/IUKM/IUKM2026/index.php)**  
-> To appear in Springer Lecture Notes in Artificial Intelligence (LNAI), an LNCS subseries | Scopus-indexed book series | SJR 2024 Q2
+> Published in Springer Lecture Notes in Artificial Intelligence (LNAI), an LNCS subseries | Scopus-indexed book series | SJR 2024 Q2
 
 This repository contains the source code accompanying the paper:
 
